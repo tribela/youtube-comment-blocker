@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "youtube-comment-block",
+  "version": "0.1",
+  "description": "Block youtube comment author from any video.",
+  "icons": {
+    "48": "icons/ytcb-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://youtube.com/*", "*://*.youtube.com/*"],
+      "js": ["ytcb.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ytcb@kjwon15.net"
+    }
+  }
+}
